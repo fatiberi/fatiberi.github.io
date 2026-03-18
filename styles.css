@@ -1,0 +1,44 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.box {
+    background: linear-gradient(135deg, #6fb1fc, #4364f7);
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    padding: 20px;
+    transition: transform 0.2s ease-in-out;
+    width: calc(30% - 30px);
+}
+
+.box:hover {
+    transform: translateY(-5px);
+}
+
+h1 {
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+}
+
+p {
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    text-align: justify;
+}
+
+@media only screen and (max-width: 768px) {
+    .box {
+        width: calc(45% - 30px);
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .box {
+        width: calc(100% - 30px);
+    }
+}
